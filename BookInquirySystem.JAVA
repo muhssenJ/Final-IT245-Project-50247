@@ -23,3 +23,10 @@ return title;
 }
 return null; 
 }
+/** Node used by the Binary Search Tree. */ private static class BookNode {
+    String title;
+    BookNode left;
+    BookNode right;
+    BookNode(String title) {
+        this.title = title;
+} }
