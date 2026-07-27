@@ -38,3 +38,6 @@ private static class BookNode {
     private static class BookBST { 
         private BookNode root; 
     } 
+void insert(String title) {
+root = insertRecursive(root, title);
+}
