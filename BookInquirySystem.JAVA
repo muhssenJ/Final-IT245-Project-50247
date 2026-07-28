@@ -67,3 +67,12 @@ String search(String targetTitle) {
     return null;
     }
 }
+
+    /** Builds a BST, then searches for the requested title. */ 
+    public static String solutionUsingBST(List<String> books, String targetTitle) { 
+        BookBST catalog = new BookBST(); 
+        for (String title : books) { 
+            catalog.insert(title); 
+        } 
+        return catalog.search(targetTitle); 
+    }
