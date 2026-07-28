@@ -41,3 +41,15 @@ private static class BookNode {
 void insert(String title) {
 root = insertRecursive(root, title);
 }
+private BookNode insertRecursive(BookNode node, String title) { 
+if (node == null) { 
+return new BookNode(title); 
+}
+int comparison = title.compareToIgnoreCase(node.title); 
+if (comparison < 0) { 
+node.left = insertRecursive(node.left, title); 
+} else if (comparison > 0) { 
+node.right = insertRecursive(node.right, title); 
+}
+return node; 
+}
