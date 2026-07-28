@@ -76,3 +76,12 @@ String search(String targetTitle) {
         } 
         return catalog.search(targetTitle); 
     }
+private static void printResult(String solutionName, String target, String result) {
+if (result != null) {
+System.out.printf("%s | Query: \"%s\" | FOUND: %s%n",
+solutionName, target, result);
+} else {
+System.out.printf("%s | Query: \"%s\" | NOT FOUND%n",
+solutionName, target);
+}
+}
