@@ -53,3 +53,11 @@ node.right = insertRecursive(node.right, title);
 }
 return node; 
 }
+String search(String targetTitle) { BookNode current = root;
+while (current != null) {
+int comparison = targetTitle.compareToIgnoreCase(current.title); if (comparison == 0) {
+            return current.title;
+}        
+current = comparison < 0 ? current.left : current.right; }
+    return null;
+}
