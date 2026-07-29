@@ -96,3 +96,7 @@ List<String> sampleBooks = Arrays.asList(
 "The Pragmatic Programmer" 
 ); 
 }
+String[] testQueries = {
+"Data Structures and Algorithms", "clean code",
+"Artificial Intelligence"
+};
