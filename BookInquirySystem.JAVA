@@ -97,13 +97,19 @@ String search(String targetTitle) {
     ); 
 
 String[] testQueries = {
-    "Data Structures and Algorithms", "clean code",
+    "Data Structures and Algorithms",
+    "clean code",
     "Artificial Intelligence"
 };
 
     for (String query : testQueries) { 
         String arrayResult = solutionUsingArrayList(sampleBooks, query); 
         String bstResult = solutionUsingBST(sampleBooks, query);
+
         printResult("ArrayList", query, arrayResult); 
-        printResult("BST ", query, bstResult); }
-System.out.println("------------------------------------------------------------");
+        printResult("BST      ", query, bstResult);
+        System.out.println("------------------------------------------------------------");
+        }
+    }
+}
+
