@@ -102,7 +102,7 @@ String[] testQueries = {
 };
 
     for (String query : testQueries) { 
-         String arrayResult = solutionUsingArrayList(sampleBooks, query); 
-
-         printResult("ArrayList", query, arrayResult); 
-     } 
+        String arrayResult = solutionUsingArrayList(sampleBooks, query); 
+        String bstResult = solutionUsingBST(sampleBooks, query);
+        printResult("ArrayList", query, arrayResult); 
+        printResult("BST ", query, bstResult); }
