@@ -85,3 +85,14 @@ System.out.printf("%s | Query: \"%s\" | NOT FOUND%n",
 solutionName, target);
 }
 }
+public static void main(String[] args) { 
+List<String> sampleBooks = Arrays.asList( 
+"Algorithms", 
+"Clean Code", 
+"Computer Networks", 
+"Data Structures and Algorithms", 
+"Database System Concepts", 
+"Operating System Concepts", 
+"The Pragmatic Programmer" 
+); 
+}
