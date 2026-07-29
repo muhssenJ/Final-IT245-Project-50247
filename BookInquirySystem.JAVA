@@ -50,7 +50,7 @@ private BookNode insertRecursive(BookNode node, String title) {
     } else if (comparison > 0) { 
         node.right = insertRecursive(node.right, title); 
     }
-
+// Duplicate titles are ignored.
     return node; 
 }
 
