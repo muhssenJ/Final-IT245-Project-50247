@@ -76,27 +76,33 @@ String search(String targetTitle) {
         } 
         return catalog.search(targetTitle); 
     }
-private static void printResult(String solutionName, String target, String result) {
-if (result != null) {
-System.out.printf("%s | Query: \"%s\" | FOUND: %s%n",
-solutionName, target, result);
-} else {
-System.out.printf("%s | Query: \"%s\" | NOT FOUND%n",
-solutionName, target);
-}
-}
-public static void main(String[] args) { 
-List<String> sampleBooks = Arrays.asList( 
-"Algorithms", 
-"Clean Code", 
-"Computer Networks", 
-"Data Structures and Algorithms", 
-"Database System Concepts", 
-"Operating System Concepts", 
-"The Pragmatic Programmer" 
-); 
-}
+    private static void printResult(String solutionName, String target, String result) {
+        if (result != null) {
+            System.out.printf("%s | Query: \"%s\" | FOUND: %s%n",
+                solutionName, target, result);
+        } else {
+            System.out.printf("%s | Query: \"%s\" | NOT FOUND%n",
+                solutionName, target);
+        }
+    }
+    public static void main(String[] args) { 
+        List<String> sampleBooks = Arrays.asList( 
+            "Algorithms", 
+            "Clean Code", 
+            "Computer Networks", 
+            "Data Structures and Algorithms", 
+            "Database System Concepts", 
+            "Operating System Concepts", 
+            "The Pragmatic Programmer" 
+    ); 
+
 String[] testQueries = {
-"Data Structures and Algorithms", "clean code",
-"Artificial Intelligence"
+    "Data Structures and Algorithms", "clean code",
+    "Artificial Intelligence"
 };
+
+    for (String query : testQueries) { 
+         String arrayResult = solutionUsingArrayList(sampleBooks, query); 
+
+         printResult("ArrayList", query, arrayResult); 
+     } 
