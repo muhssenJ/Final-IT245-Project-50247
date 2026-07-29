@@ -106,3 +106,4 @@ String[] testQueries = {
         String bstResult = solutionUsingBST(sampleBooks, query);
         printResult("ArrayList", query, arrayResult); 
         printResult("BST ", query, bstResult); }
+System.out.println("------------------------------------------------------------");
